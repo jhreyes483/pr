@@ -3,8 +3,8 @@
 // include_once 'plantillas/cuerpo/inihtmlN1.php';
 
 
-include_once $_SERVER['DOCUMENT_ROOT'].'/sicloud/controlador/controladorrutas.php';
-rutIniFromIndex();
+//include_once $_SERVER['DOCUMENT_ROOT'].'/sicloud/controlador/controladorrutas.php';
+//rutIniFromIndex();
 //echo $_SERVER['DOCUMENT_ROOT'].'/sicloud/controlador/controladorrutas.php';
 
 
