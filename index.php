@@ -8,6 +8,8 @@ include_once 'controlador/controladorrutas.php';
 rutIniFromIndexRaiz();
 //echo $_SERVER['DOCUMENT_ROOT'].'/sicloud/controlador/controladorrutas.php';
 
+echo 'prueba 1';
+
 
 ?>
 <article>
