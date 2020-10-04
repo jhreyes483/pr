@@ -9,6 +9,8 @@ rutIniFromIndexRaiz();
 //echo $_SERVER['DOCUMENT_ROOT'].'/sicloud/controlador/controladorrutas.php';
 
 
+
+
 ?>
 <article>
     <div class="container-jav">
