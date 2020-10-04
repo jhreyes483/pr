@@ -1,4 +1,4 @@
 <?php
 
-echo 'Hola soy index';
+echo 'Hola soy index 2';
 ?>
