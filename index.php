@@ -4,7 +4,7 @@
 
 
 include_once 'controlador/controladorrutas.php';
-rutIniFromIndex();
+rutIniFromIndexRaiz();
 //echo $_SERVER['DOCUMENT_ROOT'].'/sicloud/controlador/controladorrutas.php';
 
 
