@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="vista/estilos/css/jav.css">
     <link rel="stylesheet"href="vista/estilos/css/animate.css">
 <?php
-echo 'hola soy inithtml';
+echo 'hola soy inithtml 01';
 ?>
 
     <!-- data tables -->

@@ -1,8 +1,7 @@
 <?php
 
-include_once '../../plantillas/plantilla.php';
-include_once '../../plantillas/cuerpo/inihtmlN3.php';
-include_once '../../plantillas/nav/navN3.php';
+include_once '../../../controlador/controladorrutas.php';
+rutFromIniN3();
 
 ?>
 <div class="my-4">

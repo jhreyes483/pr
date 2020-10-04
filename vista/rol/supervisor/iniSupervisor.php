@@ -1,5 +1,6 @@
 <?php
-include_once '../../../controlador/ControladorSession.php';
+include_once '../../../controlador/controladorrutas.php';
+rutFromIniN3();
 //comprobacion de rol
 $in = false;
 switch ($_SESSION['usuario']['ID_rol_n']) {
@@ -23,9 +24,7 @@ if ($in == false) {
 } else {
 
   //--------------------------------------------------------------------------
-  include_once '../../plantillas/plantilla.php';
-  include_once '../../plantillas/cuerpo/inihtmlN3.php';
-  include_once '../../plantillas/nav/navN3.php';
+
 
   cardtitulo("Modulo de Supervisor");
   ?>

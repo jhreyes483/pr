@@ -1,7 +1,9 @@
 
 <?php 
 //  rol/admin/iniAdmin.php
-include_once '../../../controlador/controladorsession.php';
+include_once '../../../controlador/controladorrutas.php';
+rutFromIniN3();
+//include_once '../../../controlador/controladorsession.php';
 //comprobacion de rol
 $in = false;
 switch ($_SESSION['usuario']['ID_rol_n']) {
@@ -22,9 +24,9 @@ if ($in == false) {
 } else {
 
     //--------------------------------------------------------------------------
-include_once '../../plantillas/plantilla.php';
-include_once '../../plantillas/cuerpo/inihtmlN3.php';
-include_once '../../plantillas/nav/navN3.php';
+//include_once '../../plantillas/plantilla.php';
+//include_once '../../plantillas/cuerpo/inihtmlN3.php';
+//include_once '../../plantillas/nav/navN3.php';
 if(isset($_SESSION['usuario'])){
     print_r($_SESSION['usuario']);
     $usuario = $_SESSION['usuario'];

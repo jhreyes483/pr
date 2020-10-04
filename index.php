@@ -4,6 +4,7 @@
 
 
 include_once 'controlador/controladorrutas.php';
+//include_once './vista/rol/admin/iniAdmin.php';
 rutIniFromIndexRaiz();
 //echo $_SERVER['DOCUMENT_ROOT'].'/sicloud/controlador/controladorrutas.php';
 
@@ -19,6 +20,7 @@ rutIniFromIndexRaiz();
         </div>
     </div>
 </article>
+<h1><a href="./vista/rol/admin/iniAdmin.php">Inicio admin</a>  </h1>
 
 <hr class="border my-4" id="formlogin" /><br>
 

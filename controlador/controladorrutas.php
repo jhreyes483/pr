@@ -40,16 +40,16 @@ if (  !isset($cons)  ){
    }
    
    function rutIniFromIndex(){
-      include_once $_SERVER['DOCUMENT_ROOT'].'/sicloud/vista/plantillas/plantilla.php';
-      include_once $_SERVER['DOCUMENT_ROOT'].'/sicloud/vista/plantillas/cuerpo/inihtmlN1.php';
-      include_once $_SERVER['DOCUMENT_ROOT'].'/sicloud/vista/plantillas/nav/navgeneralvideo.php';
+      include_once '/plantillas/plantilla.php';
+      include_once '/plantillas/cuerpo/inihtmlN1.php';
+      include_once '/plantillas/nav/navgeneralvideo.php';
    }
 
 
    function rutIniFromIndexRaiz(){
-      include_once $_SERVER['DOCUMENT_ROOT'].'/sicloud/vista/plantillas/plantilla.php';
-      include_once $_SERVER['DOCUMENT_ROOT'].'/sicloud/vista/plantillas/cuerpo/inihtmlN0.php';
-      include_once $_SERVER['DOCUMENT_ROOT'].'/sicloud/vista/plantillas/nav/navgeneralvideo.php';
+      include_once 'vista/plantillas/plantilla.php';
+      include_once 'vista/plantillas/cuerpo/inihtmlN0.php';
+      include_once 'vista/plantillas/nav/navgeneralvideo.php';
    }
 
    function rutIniInactiva(){
@@ -61,11 +61,11 @@ if (  !isset($cons)  ){
    }
 
    function rutFromIni(){
-      include_once $_SERVER['DOCUMENT_ROOT'].'/sicloud/vista/plantillas/plantilla.php';
-      include_once $_SERVER['DOCUMENT_ROOT'].'/sicloud/vista/plantillas/cuerpo/inihtmlN1.php';
-      include_once $_SERVER['DOCUMENT_ROOT'].'/sicloud/vista/plantillas/nav/navN1.php';
-      include_once $_SERVER['DOCUMENT_ROOT'].'/sicloud/controlador/controladorsession.php';
-      include_once $_SERVER['DOCUMENT_ROOT'].'/sicloud/controlador/controlador.php'; 
+      include_once 'plantillas/plantilla.php';
+      include_once 'plantillas/cuerpo/inihtmlN1.php';
+      include_once 'plantillas/nav/navN1.php';
+      include_once '../controlador/controladorsession.php';
+      include_once '../controlador/controlador.php'; 
    }
    
    function rutFromFin(){ 
@@ -77,5 +77,11 @@ if (  !isset($cons)  ){
    }
 
 
+   function rutFromIniN3(){
+      include_once '../../plantillas/plantilla.php';
+      include_once '../../plantillas/cuerpo/inihtmlN3.php';
+      include_once '../../plantillas/nav/navN3.php';
+      include_once '../../../controlador/controladorsession.php';
+   }
 
 ?>
