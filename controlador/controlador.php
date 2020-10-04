@@ -1,8 +1,12 @@
 
 <?php
 //session_destroy();
-include_once '../modelo/class.documento.php';
 include_once '../modelo/class.usuario.php';
+
+
+/*
+include_once '../modelo/class.documento.php';
+
 include_once '../modelo/class.rol.php';
 include_once '../modelo/class.categoria.php';
 include_once '../modelo/class.medida.php';
@@ -14,10 +18,13 @@ include_once '../modelo/class.ciudad.php';
 include_once '../modelo/class.empresa.php';
 include_once '../modelo/class.error.php';
 include_once '../modelo/class.telefono.php';
+*/
 class ControllerDoc
 {
-    public $obModDoc;
+
     public $objModUs;
+    public $obModDoc;
+
     public $objModRol;
     public $objModCat;
     public $objModMed;
@@ -33,8 +40,12 @@ class ControllerDoc
 
     public function __construct()
     {
-        $this->obModDoc   =  Documento::ningunDatoD();
+
         $this->objModUs   =  Usuario::ningunDato();
+
+        /*
+        $this->obModDoc   =  Documento::ningunDatoD();
+
         $this->objModRol  =  Rol::ningunDato();
         $this->objModCat  =  Categoria::ningunDatoC();
         $this->objModMed  =  Medida::ningunDatoM();
@@ -46,6 +57,7 @@ class ControllerDoc
         $this->objModEmp  =  Empresa::ningunDatoP();
         $this->objModError=  ErrorLog::ningunDato();
         $this->objModTel =  Telefono::ningunDato();
+        */
     }
     public function selectDocumento()
     {
@@ -144,71 +156,71 @@ class ControllerDoc
     //"CU004-crearProductos.php"
     public function verCategorias()
     {
-        return $this->objModCat->verCategorias();
+       // return $this->objModCat->verCategorias();
     }
     //formCategoria.php
     public function verCategoria()
     {
-        return $this->objModCat->verCategoria();
+     //   return $this->objModCat->verCategoria();
     }
     public function verCategoriaId($id)
     {
-        return $this->objModCat->verCategoriaId($id);
+     //   return $this->objModCat->verCategoriaId($id);
     }
     public function verPromociones()
     {
-        return $this->objModProd->verPromociones();
+      //  return $this->objModProd->verPromociones();
     }
 
 
     //Medida     
     public function verMedida()
     {
-        return $this->objModMed->verMedida();
+      //  return $this->objModMed->verMedida();
     }
     public function verDatoPorIdMedida($id)
     {
-        return $this->objModMed->verDatoPorId($id);
+      //  return $this->objModMed->verDatoPorId($id);
     }
 
 
     public function verProveedor()
     {
-        return $this->objModPro->verProveedor();
+       // return $this->objModPro->verProveedor();
     }
 
 
 
     public function verProductos()
     { // CU003-ingresoproducto.php
-        return $this->objModProd->verProductos();
+      //  return $this->objModProd->verProductos();
     }
     public function verProductosIdCarrito($ID)
     {
-        return $this->objModProd->verProductosIdCarrito($ID);
+      //  return $this->objModProd->verProductosIdCarrito($ID);
     }
     public function tablaProducto($id)
     {
-        return $this->objModProd->verJoin($id);
+     //   return $this->objModProd->verJoin($id);
     }
     public function verProductosId($id_p)
     {
-        return $this->objModProd->verProductosId($id_p);
+       // return $this->objModProd->verProductosId($id_p);
     }
     // U004-crearproductos.php
     public function insertarProducto($a)
     {
-        return $this->objModProd->insertarProducto($a);
+      //  return $this->objModProd->insertarProducto($a);
     }
     public function verProductosGrafica()
     {
-        return $this->objModProd->verProductosGrafica();
+      //  return $this->objModProd->verProductosGrafica();
     }
     public function ConteoProductosT(){
-        return $this->objModProd->ConteoProductosT();
+      //  return $this->objModProd->ConteoProductosT();
     }
     public function EliminarProducto($id){
-        return $this->objModProd->EliminarProducto($id);
+     //   return $this->objModProd->EliminarProducto($id);
     }
 
 
@@ -216,11 +228,11 @@ class ControllerDoc
     // Catalogo
     public function buscarPorNombreProducto($id)
     {
-        return $this->objModProd->buscarPorNombreProducto($id);
+      //  return $this->objModProd->buscarPorNombreProducto($id);
     }
     public function verPorCategoria($id)
     {
-        return $this->objModProd->verPorCategoria($id);
+      //  return $this->objModProd->verPorCategoria($id);
     }
 
 
@@ -237,19 +249,19 @@ class ControllerDoc
     //metodos de factura
     public function usuariosComprasRealizadas()
     {
-        return $this->objModFact->usuariosComprasRealizadas();
+      //  return $this->objModFact->usuariosComprasRealizadas();
     }
     public function verUsuarioFactura($id)
     {
-        return $this->objModFact->verUsuarioFactura($id);
+      //  return $this->objModFact->verUsuarioFactura($id);
     }
     public function verjoinFactura()
     {
-        return $this->objModFact->verjoinFactura();
+      //  return $this->objModFact->verjoinFactura();
     }
     public function verIntervaloFecha($f1, $f2)
     {
-        return $this->objModFact->verIntervaloFecha($f1, $f2);
+       // return $this->objModFact->verIntervaloFecha($f1, $f2);
     }
 
 
@@ -258,7 +270,7 @@ class ControllerDoc
     //modificaion db
     public function verJoinModificacionesDB()
     {
-        return $this->objModModi->verJoinModificacionesDB();
+     //   return $this->objModModi->verJoinModificacionesDB();
     }
 
 
@@ -266,11 +278,11 @@ class ControllerDoc
     //Metodos de Rol
     public function verRolId($id)
     {
-        return $this->objModRol->verRolId($id);
+      //  return $this->objModRol->verRolId($id);
     }
     public function verRol()
     {
-        return $this->objModRol->verRol();
+      //  return $this->objModRol->verRol();
     }
 
 
@@ -281,34 +293,34 @@ class ControllerDoc
     //metodos de ciudad
     public function verCiudad()
     {
-        return $this->objModCiu->verCiudad();
+      //  return $this->objModCiu->verCiudad();
     }
 
     //metodos de empresa
     public function verDatoPorId($id)
     {
-        return $this->objModEmp->verDatoPorId($id);
+      //  return $this->objModEmp->verDatoPorId($id);
     }
     public function verEmpresa()
     {
-        return $this->objModEmp->verEmpresa();
+      //  return $this->objModEmp->verEmpresa();
     }
 
     public function verTelefonosUsuario(){
-        return $this->objModTel->verTelefonosUsuario();
+      //  return $this->objModTel->verTelefonosUsuario();
     }
     public function verTelefonosUsuarioPorID($id){
-        return $this->objModTel->verTelefonosUsuarioPorID($id);
+      //  return $this->objModTel->verTelefonosUsuarioPorID($id);
     }
     public function verTelefonosEmpresa(){
-        return $this->objModTel->verTelefonosEmpresa();
+      //  return $this->objModTel->verTelefonosEmpresa();
     }
     public function verTelefonosUsuarioRol($rol){
-        return $this->objModTel->verTelefonosUsuarioRol($rol);
+     //   return $this->objModTel->verTelefonosUsuarioRol($rol);
     }
 
     public function eliminarTelefono($id){
-        return $this->objModTel->eliminarTelefono($id);
+      //  return $this->objModTel->eliminarTelefono($id);
     }
 
  
@@ -316,7 +328,7 @@ class ControllerDoc
     //metodos de error
     public function verError()
     {
-        return $this->objModError->verError();
+       // return $this->objModError->verError();
     }
    
     public function ver($dato, $sale=0, $float= false, $email=''){
